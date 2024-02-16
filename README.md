@@ -1,7 +1,5 @@
-#Pembahasan UKK RPL TP.2023/2024 Website Galeri Foto
+Apta Prasetya Rizky
 
-Nama = Apta Prasetya Rizky
+XII PPLG
 
-Kelas = 12 PPLG
-
-Website Galeri Foto
+UKK RPL 2024, Website Galeri Foto
