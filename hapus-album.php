@@ -2,13 +2,9 @@
     include "koneksi.php";
     session_start();
 
-    $namaalbum=$_POST['namaalbum'];
-    $deskripsi=$_POST['deskripsi'];
-    $tanggaldibuat=date("Y-m-d");
-    $userid=$_SESSION['userid'];
+    $albumid=$_GET['albumid'];
 
-    $sql=mysqli_query($conn, "DELETE FROM album WHERE album.albumid");
+    $sql=mysqli_query($conn, "delete from album where albumid='$albumid'");
 
-    header('location:album.php');
-    
+    header("location:album.php");
 ?>

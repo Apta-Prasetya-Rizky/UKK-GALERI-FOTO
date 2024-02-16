@@ -1,14 +1,12 @@
 <?php
-    include "koneksi.php";
-    session_start();
+include "koneksi.php";
 
-    $namaalbum=$_POST['namaalbum'];
-    $deskripsi=$_POST['deskripsi'];
-    $tanggaldibuat=date("Y-m-d");
-    $userid=$_SESSION['userid'];
+$namaalbum=$_POST['namaalbum'];
+$deskripsi=$_POST['deskripsi'];
+$tanggaldibuat= $_POST['tanggaldibuat'];
+$userid= $_POST['userid'];
 
-    $sql=mysqli_query($conn, "insert into album values('', '$namaalbum', '$deskripsi', '$tanggaldibuat', '$userid')");
+$sql=mysqli_query($conn, "INSERT INTO album VALUES('','$namaalbum','$deskripsi','$tanggaldibuat','$userid')");
 
-    header('location:album.php');
-    
+header("location:album.php");
 ?>
